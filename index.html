@@ -24,7 +24,7 @@
     <!--HTMLCode-->
     <nav class="navbar navbar-light bg-light">
         <div class="container">
-            <span class="navbar-brand mb-0 h1"><i class="bi bi-card-checklist"></i> SKKU-Todo</span>
+            <span class="navbar-brand mb-0 h1"><i class="bi bi-card-checklist"></i> YuuDi's Todo List</span>
         </div>
     </nav>
 
@@ -37,14 +37,14 @@
         </div>
     </div>
 
-    <div class="d-flex">
-        <div class="flex-grow-1 bg-light rounded-2 p-2 me-1 w-50">
+    <div class="d-flex mt-3">
+        <div class="flex-grow-1 bg-light rounded-2 p-2 me-1 w-50 ms-5">
             <h3>Todos</h3>
             <div id="todo-list">
                 <div id="task" class="task bg-light p-1 rounded-2 ps-2">Sample task</div>
             </div>
         </div>
-        <div class="flex-grow-1 bg-light rounded-2 p-2 w-50">
+        <div class="flex-grow-1 bg-light rounded-2 p-2 ms-1 w-50 me-5">
             <h3>Done</h3>
             <div id="done-list">
             </div>
@@ -80,7 +80,7 @@
             input.value = "";
         });
 
-        let removeSampleTask = document.querySelector("task");
+        let removeSampleTask = document.querySelector("#task");
 
         removeSampleTask.addEventListener("click", () => {
             removeSampleTask.remove();
